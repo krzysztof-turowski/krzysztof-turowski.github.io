@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+    <head>
+    <title>Krzysztof Turowski</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/black-tie/jquery-ui.css" type="text/css">
+
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    //<![CDATA[
+    $(function() {
+      $("#main").tabs();
+
+      $(".publikacje").accordion({
+        header: "> div > h3",
+        collapsible: true,
+        active: false,
+        heightStyle: "content",
+      }).sortable({
+        handle: "h3",
+        placeholder: "ui-state-highlight",
+        stop: function(event, ui) {
+          ui.item.children("h3").triggerHandler("focusout");
+        }
+      }).disableSelection();
+
+      $(".studenci").accordion({
+        header: "> h3",
+        heightStyle: "content",
+        icons: null,
+      });
+
+      function shuffle(o){
+        for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+        for(var i = 0; i < o.length; o[i].appendChild(o[i].children[0]), i += 2);
+        return o;
+      };
+      $(".inne").html(shuffle($(".inne").children().get()));
+
+      $(".inne").sortable({
+        handle: "div",
+        placeholder: "ui-state-highlight",
+        stop: function(event, ui) {
+          ui.item.children("div").triggerHandler("focusout");
+        }
+      }).disableSelection();
+
+      $("#main").tabs({disabled: []});
+    });
+    //]]>
+    </script>
+  </head>
+  <body>
+    <div id="frame">
+      <div>
+        <h1 style="font-family:TheWall; text-align:center; font-size:250%">Krzysztof Turowski</h1>
+      </div>
+      <div id="main">
+        <ul id="menu">
+          <li><a href="#o_mnie">O mnie</a></li>
+          <li><a href="#publikacje">Publikacje</a></li>
+          <li><a href="#studenci">Studenci</a></li>
+          <li><a href="#inne">Inne</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <div id="o_mnie">
+          <h3>Badania naukowe:</h3>
+          <ul>
+            <li>Algorytmy dokładne i przybliżone dla różnych modeli kolorowania grafów.</li>
+            <li>Właściwości strukturalne i kompresja dla różnych modeli grafów losowych.</li>
+            <li>Metodologia ekonomii i historia myśli ekonomicznej, austriacka szkoła ekonomii.</li>
+          </ul>
+
+          <h3>Praca:</h3>
+          <ul>
+            <li><b>(2019-)</b> &mdash; adiunkt &mdash; Wydział Matematyki i Informatyki, Uniwersytet Jagielloński.</li>
+
+            <li><b>(2016-18)</b> &mdash; inżynier oprogramowania &mdash; Google, Cloud Platform/Compute Engine.</li>
+
+            <li><b>(2010-16)</b> &mdash; asystent/wykładowca/adiunkt &mdash; Wydział Elektroniki, Telekomunikacji i Informatyki, Politechnika Gdańska.</li>
+          </ul>
+
+          <h3>Edukacja:</h3>
+          <ul>
+            <li><b>(2016-)</b> &mdash; studia doktoranckie &mdash; Filozofia, Wydział Nauk Społecznych UG.</li>
+
+            <li><b>(2015, 2018-2019)</b> &mdash; staż naukowy &mdash; The Center for Science of Information, Purdue University.</li>
+
+            <li><b>(2014-2016)</b> &mdash; studia magisterskie &mdash; Filozofia, Wydział Nauk Społecznych UG.
+            <br> <a href="./doc/mgr-filo.pdf">Praca magisterska: Wartości i wolna wola w etyce Nicolaia Hartmanna</a></li>
+
+            <li><b>(2010-2015)</b> &mdash; studia doktoranckie &mdash; Informatyka, Wydział ETI PG.
+            <br> <a href="./doc/phd-inf.pdf">Praca doktorska: Analiza właściwości algorytmicznych problemu szkieletowego kolorowania grafów</a></li>
+
+            <li><b>(2011-2014)</b> &mdash; studia licencjackie &mdash; Filozofia, Wydział Nauk Społecznych UG.
+            <br> <a href="./doc/lic-filo.pdf">Praca licencjacka: Oczywistość i prawda w filozofii Franza Brentana</a></li>
+
+            <li><b>(2007-2011)</b> &mdash; studia magisterskie &mdash; Informatyka, Wydział ETI PG.
+            <br> <a href="./doc/mgr-inf.pdf">Praca magisterska: Szkieletowe kolorowanie grafów</a></li>
+
+            <li><b>(2005-2010)</b> &mdash; studia magisterskie &mdash; Telekomunikacja, Wydział ETI PG.
+            <br> <a href="./doc/mgr-tele.pdf">Praca magisterska: Projekt akustyczny wnętrza w oparciu o systemy modelowania akustycznego</a></li>
+
+            <li><b>(2002-2005)</b> &mdash; klasa matematyczno-fizyczno-informatyczna &mdash; I Liceum Ogólnokształcące w Gdańsku.</li>
+          </ul>
+
+          <h3>Zainteresowania:</h3>
+          <ul>
+            <li>Teoria grafów, teoria informacji, szeregowanie zadań, probabilistyka, algorytmika.</li>
+            <li>Historia idei, teoria ekonomii, metodologia nauk społecznych i przyrodniczych.</li>
+            <li>Słaby film i słaba książka.</li>
+          </ul>
+
+          <h3>Liczba Erd&#337;sa-Bacona: 7</h3>
+          <div>
+            <p style="margin:0; text-indent: 20px; font-size: 90%;">[1] <a href="https://mathscinet.ams.org/mathscinet/collaborationDistance.html">MathSciNet Collaboration Distance</a></p>
+            <p style="margin:0; text-indent: 20px; font-size: 90%;">[2] <a href="https://oracleofbacon.org/movielinks.php?a=Kevin+Bacon&b=Tomasz+Schuchardt&use_role_types=1&rt0=on">Oracle of Bacon</a></p>
+            <p style="margin:0; text-indent: 20px; font-size: 90%;">[3] <a href="https://filmpolski.pl/fp/index.php?film=1221868">W stepie szerokim</a></p>
+          </div>
+        </div>
+
+        <div id="publikacje" class="publikacje">
+          <div class="group">
+            <h3 class="ART"><a href="#"><span class="CS_ART">Artykuły - informatyka</span></a></h3>
+            <div>
+              <ol>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">A note on fast approximate backbone coloring of split graphs with star-like backbones</span><br>
+                  <span class="czasopismo">Zeszyty Naukowe Wydziału Elektroniki, Telekomunikacji i Informatyki Politechniki Gdańskiej</span>, tom 1 (2011), s. 15-30.
+                </li>
+                <li>Robert Janczewski, Krzysztof Turowski<br>
+                  <span class="publikacja">Bandwidth minimization in radio networks using backbone graph coloring</span><br>
+                  <span class="czasopismo">Automatyzacja Procesów Dyskretnych: Teoria i Zastosowania</span>, tom I (2012), s. 95-99.
+                </li>
+                <li>Robert Janczewski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://it.p.lodz.pl/file.php/12/2014-2/jacs-2014-2-Janczewski-Turowski.pdf">The backbone coloring problem for small graphs</a></span><br>
+                  <span class="czasopismo">Journal of Applied Computer Science</span>, 22(2) (2014), s. 19-30.
+                </li>
+                <li>Marcin Jurkiewicz, Marek Kubale, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://it.p.lodz.pl/file.php/12/2014-2/jacs-2014-2-Jurkiewicz-et-al.pdf">Some lower bounds on the Shannon capacity</a></span><br>
+                  <span class="czasopismo">Journal of Applied Computer Science</span>, 22(2) (2014), s. 31-42.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://www.discuss.wmie.uz.zgora.pl/php/discuss3.php?ip=&amp;url=pdf&amp;nIdA=24671&amp;nIdSesji=-1">Optimal backbone coloring of split graphs with matching backbones</a></span><br>
+                  <span class="czasopismo">Discussiones Mathematicae Graph Theory</span> 35 (2015), s. 157–169.
+                </li>
+                <li>Robert Janczewski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://link.springer.com/article/10.1007%2Fs00373-014-1462-9">The backbone coloring problem for bipartite backbones</a></span><br>
+                  <span class="czasopismo">Graphs and Combinatorics</span> 31(5) (2015), s. 1487-1496.
+                </li>
+                <li>Robert Janczewski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://www.sciencedirect.com/science/article/pii/S0020019014001951">The computational complexity of the backbone coloring problem for bounded-degree graphs with connected backbones</a></span><br>
+                  <span class="czasopismo">Information Processing Letters</span> 115(2) (2015), s. 232-236.
+                </li>
+                <li>Robert Janczewski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://www.sciencedirect.com/science/article/pii/S0166218X14004739">The computational complexity of the backbone coloring problem for planar graphs with connected backbones</a></span><br>
+                  <span class="czasopismo">Discrete Applied Mathematics</span> 184 (2015), s. 237–242.
+                </li>
+                <li>Robert Janczewski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://link.springer.com/article/10.1007/s10878-015-9827-4">An <i>O(n log n)</i> algorithm for finding edge span of cacti</a></span><br>
+                  <span class="czasopismo">Journal of Combinatorial Optimization</span> 31(4) (2016), s. 1373-1382.
+                </li>
+                <li>Robert Janczewski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://www.sciencedirect.com/science/article/pii/S0020019015001520">On the hardness of computing span of subcubic graphs</a></span><br>
+                  <span class="czasopismo">Information Processing Letters</span> 116(1) (2016), s. 26–32.
+                </li>
+                <li>Abram Magner, Krzysztof Turowski, Wojciech Szpankowski<br>
+                  <span class="publikacja"><a href="https://ieeexplore.ieee.org/document/8399863">Lossless Compression of Binary Trees with Correlated Vertex Names</a></span><br>
+                  <span class="czasopismo">IEEE Transactions on Information Theory</span> 64(9) (2018), s. 6070-6080.
+                </li>
+                <li>Robert Janczewski, Paweł Obszarski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://www.sciencedirect.com/science/article/pii/S0304397519305535">2-Coloring number revisited</a></span><br>
+                  <span class="czasopismo">Theoretical Computer Science</span>, 796 (2019), s. 187-195.
+                </li>
+                <li>Abram Magner, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://link.springer.com/article/10.1007/s00453-020-00699-2">Compression of Dynamic Graphs Generated by a Duplication Model</a></span><br>
+                  <span class="czasopismo">Algorithmica</span>, 82 (2020), s. 2687–2707.
+                </li>
+                <li>Robert Janczewski, Anna Maria Trzaskowska, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href=""><i>T</i>-colorings, divisibility and the circular chromatic number</a></span><br>
+                  <span class="czasopismo">Discussiones Mathematicae Graph Theory</span>, 41(2) (2021), s. 441–450.
+                </li>
+                <li>Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v28i1p18">Towards Degree Distribution of a Duplication-Divergence Graph Model</a></span><br>
+                  <span class="czasopismo">The Electronic Journal of Combinatorics</span>, 28(1) (2021), P1.18.
+                </li>
+                <li>Jithin Sreedharan, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://ieeexplore.ieee.org/document/9035452">Revisiting Parameter Estimation in Biological Networks: Influence of Symmetries</a></span><br>
+                  <span class="czasopismo">IEEE/ACM Transactions on Computational Biology and Bioinformatics</span>, 18(3) (2021), s. 836-849.
+                </li>
+                <li>Jithin Sreedharan, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://ieeexplore.ieee.org/document/9352540">Temporal Ordered Clustering in Dynamic Networks: Unsupervised and Semi-supervised Learning Algorithms</a></span><br>
+                  <span class="czasopismo">IEEE Transactions on Network Science and Engineering</span>, 8(2) (2021), s. 1426-1442.
+                </li>
+                <li>Robert Janczewski, Paweł Obszarski, Krzysztof Turowski, Bartłomiej Wróblewski<br>
+                  <span class="publikacja"><a href="https://www.sciencedirect.com/science/article/pii/S0166218X21004728">Infinite chromatic games</a></span><br>
+                  <span class="czasopismo">Discrete Applied Mathematics</span>, 309 (2022), s. 138-146.
+                </li>
+                <li>Robert Janczewski, Paweł Obszarski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://www.sciencedirect.com/science/article/pii/S0304397522000883">Weighted 2-sections and hypergraph reconstruction</a></span><br>
+                  <span class="czasopismo">Theoretical Computer Science</span>, 915 (2022), s. 11-25.
+                </li>
+                <li>Marek Kubale, Tytus Pikies, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0004370222000510">Scheduling with complete multipartite incompatibility graph on parallel machines: Complexity and algorithms</a></span><br>
+                  <span class="czasopismo">Artificial Intelligence</span>, 309 (2022), 103711.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="group">
+            <h3 class="ART"><a href="#"><span class="CS_CONF">Referaty konferencyjne - informatyka</span></a></h3>
+            <div>
+              <ol>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">Szybkie przybliżone kolorowanie szkieletowe split grafów z rozłącznymi gwiazdami w szkielecie</span><br>
+                  <span class="czasopismo">ICT Young 2011: I Konferencja Studentów i Doktorantów Elektroniki, Telekomunikacji, Informatyki, Automatyki i Robotyki</span>, Gdańsk, Polska, 28-29.05.2011.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">Optimal backbone coloring of split graphs with matching backbones</span><br>
+                  <span class="czasopismo">CID 2011: Colourings, Independence and Domination. 14th Workshop on Graph Theory</span>, Szklarska Poręba, Polska, 18-23.09.2011.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">On Optimal Backbone Coloring of Split and Threshold Graphs with Pairwise Disjoint Stars</span><br>
+                  <span class="czasopismo">InterTech 2012: 5th International Interdisciplinary Technical Conference of Young Scientists</span>, Poznań, Polska, 16-18.05.2012.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">Greedy algorithms for backbone graph coloring in KOALA library</span><br>
+                  <span class="czasopismo">ICT Young 2012: II konferencja Studentów i Doktorantów Elektroniki, Telekomunikacji, Informatyki, Automatyki i Robotyki</span>, Gdańsk, Polska, 26-27.05.2012.
+                </li>
+                <li>Marcin Jurkiewicz, Krzysztof Turowski<br>
+                  <span class="publikacja">Invariants of some non-weakly perfect graphs</span><br>
+                  <span class="czasopismo">CID 2013: Colourings, Independence and Domination. 15th Workshop on Graph Theory</span>, Szklarska Poręba, Polska, 15-20.09.2013.
+                </li>
+                <li>Abram Magner, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://www.cs.purdue.edu/homes/spa/papers/isit16-treecomp.pdf">Lossless compression of binary trees with correlated vertex names</a></span><br>
+                  <span class="czasopismo">ISIT 2016: IEEE International Symposium on Information Theory</span>, Barcelona, Hiszpania, 10-15.07.2016.
+                </li>
+                <li>Jacek Cichoń, Abram Magner, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://cs.pwr.edu.pl/cichon/Opus5/analco17-sym.pdf">On Symmetries of Non-Plane Trees in a Non-Uniform Model</a></span><br>
+                  <span class="czasopismo">ANALCO 2017: 14th Workshop on Analytic Algorithms and Combinatorics</span>, Barcelona, Hiszpania, 16-17.01.2017.
+                </li>
+                <li>Abram Magner, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://ieeexplore.ieee.org/document/8636034/">Compression of Dynamic Graphs Generated by a Duplication Model</a></span><br>
+                  <span class="czasopismo">56th Annual Allerton Conference on Communication, Control, and Computing</span>, Urbana-Champaign, Illinois, USA, 2-5.10.2018.
+                </li>
+                <li>Philippe Jacquet, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://ieeexplore.ieee.org/document/8849466/">Asymptotics of Entropy of the Dirichlet-Multinomial Distribution</a></span><br>
+                  <span class="czasopismo">ISIT 2019: IEEE International Symposium on Information Theory</span>, Paryż, Francja, 7-12.07.2019.
+                </li>
+                <li>Jithin Sreedharan, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja">Revisiting Parameter Estimation in Biological Networks: Influence of Symmetries</span><br>
+                  <span class="czasopismo">BioKDD 2019: 18th International Workshop on Data Mining in Bioinformatics</span>, Anchorage, Alaska, USA, 5.08.2019.
+                </li>
+                <li>Philippe Jacquet, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://drops.dagstuhl.de/opus/volltexte/2020/12046/">Power-Law Degree Distribution in the Connected Component of a Duplication Graph</a></span><br>
+                  <span class="czasopismo">AofA 2020: International Conference on Probabilistic, Combinatorial and Asymptotic Methods for the Analysis of Algorithms</span>, Klagenfurt, Austria, 15-19.06.2020.
+                </li>
+                <li>Jithin Sreedharan, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://ieeexplore.ieee.org/document/9174079">Temporal Ordered Clustering in Dynamic Networks</a></span><br>
+                  <span class="czasopismo">ISIT 2020: IEEE International Symposium on Information Theory</span>, Los Angeles, Kalifornia, USA, 21-26.06.2020.
+                </li>
+                <li>Alan Frieze, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://link.springer.com/chapter/10.1007/978-3-030-60440-0_18">Degree Distribution for Duplication-Divergence Graphs: Large Deviations</a></span><br>
+                  <span class="czasopismo">WG 2020: 46th International Workshop on Graph-Theoretic Concepts in Computer Science</span>, Leeds, UK, 24-26.06.2020.
+                </li>
+                <li>Marek Kubale, Tytus Pikies, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://ojs.aaai.org/index.php/ICAPS/article/view/15970">Scheduling with Complete Multipartite Incompatibility Graph on Parallel Machines</a></span><br>
+                  <span class="czasopismo">ICAPS 2021: 31st International Conference on Automated Planning and Scheduling</span>, Guangzhou, Chiny, 2-13.08.2021.
+                </li>
+                <li>Alan Frieze, Wojciech Szpankowski, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="">The concentration of the maximum degree in the duplication-divergence models</a></span><br>
+                  <span class="czasopismo">COCOON 2021: 27th International Computing and Combinatorics Conference</span>, Tainan, Tajwan, 24-26.10.2021.
+                </li>
+             </ol>
+            </div>
+          </div>
+
+          <div class="group">
+            <h3 class="ART"><a href="#"><span class="FIL_ECON_ART">Artykuły - filozofia i ekonomia</span></a></h3>
+            <div>
+              <ol>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://zfn.edu.pl/index.php/zfn/article/view/479">Mikropodstawy: prawdziwe i fałszywe</a></span><br>
+                  <span class="czasopismo">Zagadnienia Filozoficzne w Nauce</span> 67 (2019), s. 15-59.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="http://www.pte.pl/pliki/1/8905/Ekonomista_2020-3_97-115.pdf">Krakowska szkoła ekonomii wobec Wielkiego Kryzysu</a></span><br>
+                  <span class="czasopismo">Ekonomista</span> 3 (2020), s. 431-449.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">Inspiracje filozoficzne Carla Mengera</span><br>
+                  [w:] A. Sielska (red.), <span class="ksiazka">Niech żyje rewolucja! 150 lat Zasad ekonomii Carla Mengera</span>, Warszawa-Białystok: Instytut Ludwiga von Misesa & Wydawnictwo Uniwersytetu w Białymstoku (2021), s. 3-23.
+                </li>
+                <li>Mateusz Machaj, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://www.e-elgar.com/shop/gbp/a-modern-guide-to-austrian-economics-9781789904390.html">Economic Calculation and Socialism</a></span><br>
+                  [w:] P. Bylund (red.), <span class="ksiazka">A Modern Guide to Austrian Economics</span>, Cheltenham: Edward Elgar Publishing (2022), s. 142-164.
+                </li>
+                <li>Mateusz Machaj, Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://link.springer.com/chapter/10.1007/978-3-031-08502-4_5">The Present State of Austrian School of Economics in Europe: Evolution and Impact</a></span><br>
+                  [w:] A. Godart-van der Kroon, J. Salerno (red.), <span class="ksiazka">The Austrian School of Economics in the 21st Century</span>, Cham: Springer (2022), s. 85-115.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja"><a href="https://www.elgaronline.com/edcollchap/book/9781035302895/book-part-9781035302895-6.xml">Carl Menger and his philosophical influences</a></span><br>
+                  [w:] A. Sielska, Ł. Jasiński, K. Turowski (red.), <span class="ksiazka">Mengerian Economics</span>, Cheltenham: Edward Elgar Publishing (2023), s. 1-23.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="group">
+            <h3 class="ART"><a href="#"><span class="FIL_ECON_CONF">Referaty konferencyjne - filozofia i ekonomia</span></a></h3>
+            <div>
+              <ol>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">Szkoła krakowska wobec Wielkiego Kryzysu</span><br>
+                  <span class="czasopismo">Liberalizm w Polsce. Historia i współczesność idei</span>, Katowice, Polska, 11.05.2016.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">Metodologia marksistowska w perspektywie Austriackiej Szkoły Ekonomii</span><br>
+                  <span class="czasopismo">Libertarianizm a myśl polityczna lewicy</span>, Toruń, Polska, 5-6.10.2017.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">The Modern Investigations into the Structure of Production: A Critique</span><br>
+                  <span class="czasopismo">8th International Conference The Austrian School of Economics in the 21st Century</span>, Wiedeń, Austria, 12-14.11.2019.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">Rise of an economist. From Neusandez to Vienna</span><br>
+                  <span class="czasopismo">10th International Conference The Austrian School of Economics in the 21st Century</span>, Wiedeń, Austria, 4-5.11.2021.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">Austrian School and Ergodicity in Economics</span><br>
+                  <span class="czasopismo">7th Austrian Economics Meeting Europe</span>, Angers, Francja, 12-13.05.2023.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="group">
+            <h3 class="ART"><a href="#"><span class="OTHER">Inne teksty i nagrania</span></a></h3>
+            <ol>
+              <li><span class="publikacja">Szkoła Ekonomiczna Instytutu Misesa</span>
+                <div>
+                  <a href="https://www.youtube.com/watch?v=nYqMoDyCrII">Metodologia ekonomii</a> (2021)<br>
+                  <a href="https://www.youtube.com/watch?v=j3HvqelSQzY">Ceny i kalkulacja ekonomiczna</a> (2021)<br>
+                  <a href="https://www.youtube.com/watch?v=_tl4dqHBiFY">Interwencje rządu w pieniądz i bankowość</a> (2020)<br>
+                </div>
+              </li>
+              <li><span class="publikacja">Ludzkie gadanie: podcast o ekonomii i wolności</span>
+                <div>
+                  <a href="https://www.youtube.com/watch?v=tT40RDY1f-c">#13: Carl Menger: życie i twórczość</a><br>
+                  <a href="https://www.youtube.com/watch?v=tT40RDY1f-c">#20: Blaski i cienie matematyzacji ekonomii</a><br>
+                </div>
+              </li>
+              <li><span class="publikacja">Kluby Austriackiej Szkoły Ekonomii</span>
+                <div>
+                  <a href="https://www.youtube.com/watch?v=8Ui34VMeV_M">Filozoficzne źródła Austriackiej Szkoły Ekonomii</a> (28.09.2012)<br>
+                  <a href="https://www.youtube.com/watch?v=sWddLbY1ojc">Czy ekonomia musi być niezrozumiała? Wprowadzenie do metody Szkoły Austriackiej</a> (12.01.2013)<br>
+                  <a href="https://www.youtube.com/watch?v=AzAhHZf-7Bk">Czy kredyt powinien być darmowy? Polemika C. F. Bastiata z P. J. Proudhonem</a> (09.03.2013)<br>
+                  <a href="https://www.youtube.com/watch?v=xBTnzl5igqs">Wstęp do Austriackiej Szkoły Ekonomii</a> (20.02.2014)<br>
+                  <a href="https://www.youtube.com/watch?v=k5H7ArXkT-k">Austriacka Szkoła Ekonomii wobec ekonomii marksistowskiej</a> (09.11.2017)<br>
+                </div>
+              </li>
+              <li><span class="publikacja">Teksty na mises.pl</span>
+                <div>
+                  <a href="https://mises.pl/public/artykul/turowski-w-gaszczu-antyliberalizmow">W gąszczu antyliberalizmów</a><br>
+                  <a href="https://mises.pl/public/artykul/nagroda-nobla-z-ekonomii-2021">Nagroda Nobla z ekonomii 2021</a><br>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="studenci">
+          <div class="studenci">
+            <h3 class="THESIS"><a href="#"><span class="MSC">Prace magisterskie</span></a></h3>
+            <div>
+              <ol>
+                <li>Adrian Siwiec - <a href="https://github.com/AdrianSiwiec/Perfect-Graphs">Rozpoznawanie i kolorowanie grafów doskonałych</a> (2020)</li>
+                <li>Paweł Palenica - <a href="https://gitlab.com/kepasa/master-thesis/">Algorytmy kompresji grafów losowych</a> (2020)</li>
+                <li>Michał Stobierski - <a href="https://github.com/stobis/better-max-flow">Szybkie obliczanie maksymalnych przepływów metodami kombinatorycznymi</a> (2022)</li>
+                <li>Marcin Serwin - <a href="https://github.com/krzysztof-turowski/duplication-divergence">Metody wnioskowania parametrów dla różnych modeli grafów losowych (2022)</a></li>
+                <li>Wojciech Grabis - <a href="https://github.com/wgrabis/DSGE">Implementacja wybranych modeli makroekonomicznych DSGE</a> (2023)</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="studenci">
+            <h3 class="THESIS"><a href="#"><span class="BSC">Prace licencjackie</span></a></h3>
+            <div>
+              <ol>
+                <li>Mateusz Górski - <a href="https://github.com/Reksbril/praca_licencjacka">Uogólnienie liczby Turána</a> (2020)</li>
+                <li>Marcin Serwin - <a href="https://github.com/marcin-serwin/cographs/">Przegląd algorytmów operujących na kografach</a> (2020)</li>
+                <li>Krzysztof Michalik - <a href="https://arxiv.org/abs/2107.05772">On λ-backbone coloring of cliques with tree backbones in linear time</a> (2021)</li>
+                <li>Mikołaj Twaróg - <a href="https://github.com/MikolajTwarog/Technika-Baker">Wielomianowe schematy aproksymacyjne dla problemów NP-trudnych na grafach planarnych</a> (2021)</li>
+                <li>Mateusz Pach - <a href="https://github.com/krzysztof-turowski/distributed-framework/blob/master/text/consensus-thesis/">Protokoły rozproszonego konsensusu</a> (2022)</li>
+                <li>Inka Sokołowska - <a href="https://arxiv.org/abs/2207.05868">Szeregowanie zadań z grafem ograniczeń</a> (2022)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div id="inne">
+          <div class="inne" style="display:table; font-size:125%; text-align: center; width: 95%; margin-top: 10px;">
+            <div class="group inne_group" onclick="window.open('http://www.mises.pl', '_blank')">
+              <div class="inne_text">
+                Instytut Misesa
+              </div>
+              <div class="inne_img">
+                <img height="100" src="./images/im.jpg" alt="Instytut Misesa">
+              </div>
+            </div>
+            <div class="group inne_group" onclick="window.open('https://for.org.pl/', '_blank')">
+              <div class="inne_text">
+                Forum Obywatelskiego Rozwoju
+              </div>
+              <div class="inne_img">
+                <img height="60" src="./images/for.jpg" alt="Forum Obywatelskiego Rozwoju">
+              </div>
+            </div>
+            <div class="group inne_group" onclick="window.open('http://www.facebook.com/hackercup', '_blank')">
+              <div class="inne_text">
+                Facebook Hacker Cup
+              </div>
+              <div class="inne_img">
+                <img height="80" src="./images/fhc.jpg" alt="Facebook Hacker Cup">
+              </div>
+            </div>
+            <div class="group inne_group" onclick="window.open('https://www.libertyfund.org/', '_blank')">
+              <div class="inne_text">
+                Liberty Fund
+              </div>
+              <div class="inne_img">
+                <img height="100" src="./images/lf.png" alt="Liberty Fund">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="kontakt">
+          <h3>dr inż. Krzysztof Turowski</h3>
+
+          <p><b>E-mail:</b> <img height="20" src="./images/email.png" style="vertical-align:top;" alt="e-mail"></p>
+          
+          <p>ORCID: <a href="https://orcid.org/0000-0003-3871-1038"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" style="vertical-align:top;"> 0000-0003-3871-1038</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

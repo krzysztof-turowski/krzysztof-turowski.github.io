@@ -1,0 +1,63 @@
+.MSC            { color: red; }
+.BSC            { color: limegreen; }
+.CS_ART         { color: crimson; }
+.CS_CONF        { color: deepskyblue; }
+.FIL_ECON_ART   { color: yellowgreen; }
+.FIL_ECON_CONF  { color: gold; }
+.OTHER          { color: turquoise; }
+.OTHER_11       { color: dodgerblue; }
+.OTHER_10       { color: orchid; }
+.OTHER_9        { color: darkorchid; }
+.OTHER_8        { color: peru; }
+.OTHER_7        { color: darkkhaki; }
+.OTHER_6        { color: orangered; }
+.OTHER_5        { color: brown; }
+.OTHER_4        { color: blueviolet; }
+.OTHER_3        { color: orange; }
+.OTHER_2        { color: chartreuse; }
+.OTHER_1        { color: blanchedalmond; }
+
+.MSC            { margin-left: 10px; }
+.BSC            { margin-left: 10px; }
+
+ul              { margin-top: -0.5em; }
+ol              { margin-top: -0.3em; margin-left: -1em; }
+li              { line-height: 1.75em; }
+hr              { width: 80%; }
+
+.group > ol > li         { margin-bottom: 20px; }
+.group > ol > li > div   { margin-left: 5%; }
+
+.publikacja  { font-weight: bold; }
+.czasopismo  { font-variant: small-caps; font-size: 105%; }
+.ksiazka     { font-variant: small-caps; font-size: 105%; }
+
+.inne_group  { display: table-row; border: 2px solid; } 
+.inne_text   { display: table-cell; width: 50%; vertical-align: middle; font-family: MaszynaRoyalDarkFont; font-size: 140%; }
+.inne_img    { display: table-cell; width: 50%; vertical-align: middle; padding: 10px; }
+
+@media only screen and (min-width: 360px) and (max-width: 719px) {
+  #frame              { width: 92%; margin: 0 auto; }
+  div#main ul#menu    { width: 90%; font-size: 18px; }
+}
+
+@media only screen and (min-width: 720px) {
+  #frame              { width: 700px; margin: 0 auto; }
+}
+
+@font-face {
+  font-family: "MaszynaRoyalLightFont";
+  src: url('../fonts/Maszyna_Royal_Light.ttf') format('truetype'), url('../fonts/Maszyna_Royal_Light.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "MaszynaRoyalDarkFont";
+  src: url('../fonts/Maszyna_Royal_Dark.ttf') format('truetype'), url('../fonts/Maszyna_Royal_Dark.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "TheWall";
+  src: url('../fonts/"The_Wall.woff') format('woff'), url('../fonts/The_Wall.ttf') format('truetype'), url('../fonts/The_Wall.eot') format('embedded-opentype');
+}
+
+.ui-widget * { outline: none; }
