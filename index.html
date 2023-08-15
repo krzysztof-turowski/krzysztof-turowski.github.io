@@ -5,6 +5,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script/jquery.MultiLanguage.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/black-tie/jquery-ui.css" type="text/css">
 
@@ -12,8 +13,15 @@
     <link rel="stylesheet" href="css/style.css">
     <script>
     //<![CDATA[
+    var lang = 'en';
+
+    function switchLanguage() {
+      lang = lang == 'pl' ? 'en' : 'pl';
+      $.MultiLanguage('script/language.json', lang);
+    }
+
     $(function() {
-      $("#main").tabs();
+      $("#main").tabs({disabled: []});
 
       $(".publikacje").accordion({
         header: "> div > h3",
@@ -29,10 +37,11 @@
       }).disableSelection();
 
       $(".studenci").accordion({
-        header: "> h3",
+        header: "> div > h3",
+        collapsible: true,
+        active: false,
         heightStyle: "content",
-        icons: null,
-      });
+      }).disableSelection();
 
       function shuffle(o){
         for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -49,83 +58,49 @@
         }
       }).disableSelection();
 
-      $("#main").tabs({disabled: []});
-    });
+      switchLanguage();
+    })
     //]]>
     </script>
   </head>
   <body>
     <div id="frame">
       <div>
-        <h1 style="font-family:TheWall; text-align:center; font-size:250%">Krzysztof Turowski</h1>
+        <a href="javascript:switchLanguage();"><img height="40" src="./images/flag.webp" style="float: right;" alt="PL/ENG"></a>
+        <h1 style="font-family:TheWall; text-align:center; font-size:250%; position:relative; margin-right:60px;">Krzysztof Turowski</h1>
       </div>
       <div id="main">
         <ul id="menu">
-          <li><a href="#o_mnie">O mnie</a></li>
-          <li><a href="#publikacje">Publikacje</a></li>
-          <li><a href="#studenci">Studenci</a></li>
-          <li><a href="#inne">Inne</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#o_mnie" id="o_mnie_text"></a></li>
+          <li><a href="#publikacje" id="publikacje_text"></a></li>
+          <li><a href="#studenci" id="studenci_text"></a></li>
+          <li><a href="#inne" id="inne_text"></a></li>
+          <li><a href="#kontakt" id="kontakt_text"></a></li>
         </ul>
         <div id="o_mnie">
-          <h3>Badania naukowe:</h3>
-          <ul>
-            <li>Algorytmy dokładne i przybliżone dla różnych modeli kolorowania grafów.</li>
-            <li>Właściwości strukturalne i kompresja dla różnych modeli grafów losowych.</li>
-            <li>Metodologia ekonomii i historia myśli ekonomicznej, austriacka szkoła ekonomii.</li>
-          </ul>
+          <h3 id="badania_text"></h3>
+          <ul id="badania"></ul>
 
-          <h3>Praca:</h3>
-          <ul>
-            <li><b>(2019-)</b> &mdash; adiunkt &mdash; Wydział Matematyki i Informatyki, Uniwersytet Jagielloński.</li>
+          <h3 id="praca_text"></h3>
+          <ul id="praca"></ul>
 
-            <li><b>(2016-18)</b> &mdash; inżynier oprogramowania &mdash; Google, Cloud Platform/Compute Engine.</li>
+          <h3 id="edukacja_text"></h3>
+          <ul id="edukacja"></ul>
 
-            <li><b>(2010-16)</b> &mdash; asystent/wykładowca/adiunkt &mdash; Wydział Elektroniki, Telekomunikacji i Informatyki, Politechnika Gdańska.</li>
-          </ul>
+          <h3 id="zainteresowania_text"></h3>
+          <ul id="zainteresowania"></ul>
 
-          <h3>Edukacja:</h3>
-          <ul>
-            <li><b>(2016-)</b> &mdash; studia doktoranckie &mdash; Filozofia, Wydział Nauk Społecznych UG.</li>
-
-            <li><b>(2015, 2018-2019)</b> &mdash; staż naukowy &mdash; The Center for Science of Information, Purdue University.</li>
-
-            <li><b>(2014-2016)</b> &mdash; studia magisterskie &mdash; Filozofia, Wydział Nauk Społecznych UG.
-            <br> <a href="./doc/mgr-filo.pdf">Praca magisterska: Wartości i wolna wola w etyce Nicolaia Hartmanna</a></li>
-
-            <li><b>(2010-2015)</b> &mdash; studia doktoranckie &mdash; Informatyka, Wydział ETI PG.
-            <br> <a href="./doc/phd-inf.pdf">Praca doktorska: Analiza właściwości algorytmicznych problemu szkieletowego kolorowania grafów</a></li>
-
-            <li><b>(2011-2014)</b> &mdash; studia licencjackie &mdash; Filozofia, Wydział Nauk Społecznych UG.
-            <br> <a href="./doc/lic-filo.pdf">Praca licencjacka: Oczywistość i prawda w filozofii Franza Brentana</a></li>
-
-            <li><b>(2007-2011)</b> &mdash; studia magisterskie &mdash; Informatyka, Wydział ETI PG.
-            <br> <a href="./doc/mgr-inf.pdf">Praca magisterska: Szkieletowe kolorowanie grafów</a></li>
-
-            <li><b>(2005-2010)</b> &mdash; studia magisterskie &mdash; Telekomunikacja, Wydział ETI PG.
-            <br> <a href="./doc/mgr-tele.pdf">Praca magisterska: Projekt akustyczny wnętrza w oparciu o systemy modelowania akustycznego</a></li>
-
-            <li><b>(2002-2005)</b> &mdash; klasa matematyczno-fizyczno-informatyczna &mdash; I Liceum Ogólnokształcące w Gdańsku.</li>
-          </ul>
-
-          <h3>Zainteresowania:</h3>
-          <ul>
-            <li>Teoria grafów, teoria informacji, szeregowanie zadań, probabilistyka, algorytmika.</li>
-            <li>Historia idei, teoria ekonomii, metodologia nauk społecznych i przyrodniczych.</li>
-            <li>Słaby film i słaba książka.</li>
-          </ul>
-
-          <h3>Liczba Erd&#337;sa-Bacona: 7</h3>
-          <div>
-            <p style="margin:0; text-indent: 20px; font-size: 90%;">[1] <a href="https://mathscinet.ams.org/mathscinet/collaborationDistance.html">MathSciNet Collaboration Distance</a></p>
-            <p style="margin:0; text-indent: 20px; font-size: 90%;">[2] <a href="https://oracleofbacon.org/movielinks.php?a=Kevin+Bacon&b=Tomasz+Schuchardt&use_role_types=1&rt0=on">Oracle of Bacon</a></p>
-            <p style="margin:0; text-indent: 20px; font-size: 90%;">[3] <a href="https://filmpolski.pl/fp/index.php?film=1221868">W stepie szerokim</a></p>
+          <h3 id="liczba_erdosa-bacona"></h3>
+          <div class="odleglosc">
+            <p>[1] <a href="https://mathscinet.ams.org/mathscinet/collaborationDistance.html">MathSciNet Collaboration Distance</a></p>
+            <p>[2] <a href="https://oracleofbacon.org/movielinks.php?a=Kevin+Bacon&b=Tomasz+Schuchardt&use_role_types=1&rt0=on">Oracle of Bacon</a></p>
+            <p>[3] <a href="https://filmpolski.pl/fp/index.php?film=1221868">W stepie szerokim</a></p>
           </div>
         </div>
 
         <div id="publikacje" class="publikacje">
           <div class="group">
-            <h3 class="ART"><a href="#"><span class="CS_ART">Artykuły - informatyka</span></a></h3>
+            <h3 class="ART"><a href="#"><span class="CS_ART"></span></a></h3>
             <div>
               <ol>
                 <li>Krzysztof Turowski<br>
@@ -209,15 +184,15 @@
                   <span class="czasopismo">Artificial Intelligence</span>, 309 (2022), 103711.
                 </li>
                 <li>Robert Janczewski, Krzysztof Turowski, Bartłomiej Wróblewski<br />
-                  <span class="publikacja">Signed edge coloring of graphs of classes 1 and 2</span><br />
-                  <span class="czasopismo">Discrete Applied Mathematics</span>, (przyjęte do druku).
+                  <span class="publikacja"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0166218X23002512">Edge coloring of graphs of signed class 1 and 2</a></span><br />
+                  <span class="czasopismo">Discrete Applied Mathematics</span>, 338 (2023), s. 311-319.
                 </li>
               </ol>
             </div>
           </div>
 
           <div class="group">
-            <h3 class="ART"><a href="#"><span class="CS_CONF">Referaty konferencyjne - informatyka</span></a></h3>
+            <h3 class="ART"><a href="#"><span class="CS_CONF"></span></a></h3>
             <div>
               <ol>
                 <li>Krzysztof Turowski<br>
@@ -277,15 +252,19 @@
                   <span class="czasopismo">ICAPS 2021: 31st International Conference on Automated Planning and Scheduling</span>, Guangzhou, Chiny, 2-13.08.2021.
                 </li>
                 <li>Alan Frieze, Wojciech Szpankowski, Krzysztof Turowski<br>
-                  <span class="publikacja"><a href="">The concentration of the maximum degree in the duplication-divergence models</a></span><br>
+                  <span class="publikacja"><a href="https://link.springer.com/chapter/10.1007/978-3-030-89543-3_35">The concentration of the maximum degree in the duplication-divergence models</a></span><br>
                   <span class="czasopismo">COCOON 2021: 27th International Computing and Combinatorics Conference</span>, Tainan, Tajwan, 24-26.10.2021.
+                </li>
+                <li>Krzysztof Turowski<br>
+                  <span class="publikacja">Concentration of Degrees in the Duplication-Divergence Model</span><br>
+                  <span class="czasopismo">GWGT 2023: 8th Gdańsk Workshop on Graph Theory</span>, Sopot, Polska, 26-30.06.2023.
                 </li>
              </ol>
             </div>
           </div>
 
           <div class="group">
-            <h3 class="ART"><a href="#"><span class="FIL_ECON_ART">Artykuły - filozofia i ekonomia</span></a></h3>
+            <h3 class="ART"><a href="#"><span class="PPE_ART"></span></a></h3>
             <div>
               <ol>
                 <li>Krzysztof Turowski<br>
@@ -317,7 +296,7 @@
           </div>
 
           <div class="group">
-            <h3 class="ART"><a href="#"><span class="FIL_ECON_CONF">Referaty konferencyjne - filozofia i ekonomia</span></a></h3>
+            <h3 class="ART"><a href="#"><span class="PPE_CONF"></span></a></h3>
             <div>
               <ol>
                 <li>Krzysztof Turowski<br>
@@ -345,7 +324,7 @@
           </div>
 
           <div class="group">
-            <h3 class="ART"><a href="#"><span class="OTHER">Inne teksty i nagrania</span></a></h3>
+            <h3 class="ART"><a href="#"><span class="OTHER"></span></a></h3>
             <ol>
               <li><span class="publikacja">Szkoła Ekonomiczna Instytutu Misesa</span>
                 <div>
@@ -385,9 +364,19 @@
           </div>
         </div>
 
-        <div id="studenci">
-          <div class="studenci">
-            <h3 class="THESIS"><a href="#"><span class="MSC">Prace magisterskie</span></a></h3>
+        <div id="studenci" class="studenci">
+          <div class="group">
+            <h3 class="THESIS"><a href="#"><span class="RESEARCH"></span></a></h3>
+            <div>
+              <ol>
+                <li><a href="https://github.com/krzysztof-turowski/koala-networkit/issues">Implementacja algorytmów grafowych</a></li>
+                <li><a href="https://github.com/krzysztof-turowski/string-algorithms/issues">Implementacja algorytmów wyszukiwania, kompresji i dekompozycji tekstu</a></li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="group">
+            <h3 class="THESIS"><a href="#"><span class="MSC"></span></a></h3>
             <div>
               <ol>
                 <li>Adrian Siwiec - <a href="https://github.com/AdrianSiwiec/Perfect-Graphs">Rozpoznawanie i kolorowanie grafów doskonałych</a> (2020)</li>
@@ -399,18 +388,18 @@
             </div>
           </div>
 
-          <div class="studenci">
-            <h3 class="THESIS"><a href="#"><span class="BSC">Prace licencjackie</span></a></h3>
+          <div class="group">
+            <h3 class="THESIS"><a href="#"><span class="BSC"></span></a></h3>
             <div>
               <ol>
                 <li>Mateusz Górski - <a href="https://github.com/Reksbril/praca_licencjacka">Uogólnienie liczby Turána</a> (2020)</li>
                 <li>Marcin Serwin - <a href="https://github.com/marcin-serwin/cographs/">Przegląd algorytmów operujących na kografach</a> (2020)</li>
                 <li>Krzysztof Michalik - <a href="https://arxiv.org/abs/2107.05772">On λ-backbone coloring of cliques with tree backbones in linear time</a> (2021)</li>
                 <li>Mikołaj Twaróg - <a href="https://github.com/MikolajTwarog/Technika-Baker">Wielomianowe schematy aproksymacyjne dla problemów NP-trudnych na grafach planarnych</a> (2021)</li>
-                <li>Mateusz Pach - <a href="https://github.com/krzysztof-turowski/distributed-framework/blob/master/text/consensus-thesis/">Protokoły rozproszonego konsensusu</a> (2022)</li>
+                <li>Mateusz Pach - <a href="https://github.com/krzysztof-turowski/distributed-framework/tree/master/text/consensus-thesis/">Protokoły rozproszonego konsensusu</a> (2022)</li>
                 <li>Inka Sokołowska - <a href="https://arxiv.org/abs/2207.05868">Szeregowanie zadań z grafem ograniczeń</a> (2022)</li>
                 <li>Hubert Zięba - <a href="https://arxiv.org/abs/2304.12073">The game chromatic number of complete multipartite graphs with no singletons</a> (2023)</li>
-                <li>Julian Leśniak - <a href="https://github.com/krzysztof-turowski/string-algorithms/blob/master/text/benchar/">Asymptotyczna i praktyczna efektywność różnych algorytmów dopasowania ciągów</a> (2023)</li>
+                <li>Julian Leśniak - <a href="https://github.com/krzysztof-turowski/string-algorithms/tree/master/text/benchar">Asymptotyczna i praktyczna efektywność różnych algorytmów dopasowania ciągów</a> (2023)</li>
                 <li>Zofia Glapa - <a href="https://github.com/krzysztof-turowski/koala-networkit/tree/master/text/exact_enumeration_vertex_coloring/">Implementation of exact enumeration algorithms for vertex coloring</a> (2023)</li>
                 <li>Piotr Kubaty - <a href="https://github.com/krzysztof-turowski/koala-networkit/tree/master/text/dominating_set/exact_algorithms_for_dominating_set/">Implementation of exact algorithms for minimum dominating set</a> (2023)</li>
               </ol>
@@ -458,7 +447,7 @@
           <h3>dr hab. Krzysztof Turowski</h3>
 
           <p><b>E-mail:</b> <img height="20" src="./images/email.png" style="vertical-align:top;" alt="e-mail"></p>
-          
+
           <p>ORCID: <a href="https://orcid.org/0000-0003-3871-1038"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" style="vertical-align:top;"> 0000-0003-3871-1038</a>
         </div>
       </div>

@@ -1,0 +1,97 @@
+{
+  "config": {
+    "default": "pl"
+  },
+  "language": {
+    "en": {
+      "#o_mnie_text": "About me",
+      "#publikacje_text": "Publications",
+      "#studenci_text": "Students",
+      "#inne_text": "Other",
+      "#kontakt_text": "Contact",
+      "#badania_text": "Research",
+      "#badania": [
+        "<li>Exact and approximation algorithms for graph coloring problems.</li>",
+        "<li>Structural properties and compression for random graphs.</li>",
+        "<li>Methodology of economics, history of economic thought, Austrian School of Economics.</li>"
+      ],
+      "#praca_text": "Work",
+      "#praca": [
+        "<li><b>(2019-)</b> &mdash; assistant professor &mdash; Theoretical Computer Science Department, Faculty of Mathematics and Computer Science, Jagiellonian University, Kraków, Poland.</li>",
+        "<li><b>(2016-18)</b> &mdash; software engineer &mdash; Google, Cloud Platform/Compute Engine.</li>",
+        "<li><b>(2010-16)</b> &mdash; assistant/lecturer/assistant professor &mdash; Wydział Elektroniki, Telekomunikacji i Informatyki, Politechnika Gdańska.</li>"
+      ],
+      "#edukacja_text": "Education",
+      "#edukacja": [
+        "<li><b>(2016-2021)</b> &mdash; PhD studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.</li>",
+        "<li><b>(2015, 2018-2019)</b> &mdash; post-doc &mdash; The Center for Science of Information, Purdue University.</li>",
+        "<li><b>(2014-2016)</b> &mdash; MA studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.<br><a href=\"./doc/mgr-filo.pdf\">Praca magisterska: Values and free will in the ethics of Nicolai Hartmann</a> [in Polish].</li>",
+        "<li><b>(2010-2015)</b> &mdash; PhD studies &mdash; Computer Science, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/phd-inf.pdf\">Thesis: Analysis of algorithmic properties of the backbone graph coloring problem</a> [in Polish].</li>",
+        "<li><b>(2011-2014)</b> &mdash; BA studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.<br><a href=\"./doc/lic-filo.pdf\">Thesis: Evidence and truth in the philosophy of Franz Brentano</a> [in Polish].</li>",
+        "<li><b>(2007-2011)</b> &mdash; MSc studies &mdash; Computer Science, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/mgr-inf.pdf\">Thesis: Backbone graph coloring</a> [in Polish].</li>",
+        "<li><b>(2005-2010)</b> &mdash; MSc studies &mdash; Telecommunications, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/mgr-tele.pdf\">Thesis: Projekt akustyczny wnętrza w oparciu o systemy modelowania akustycznego</a> [in Polish].</li>",
+        "<li><b>(2002-2005)</b> &mdash; klasa matematyczno-fizyczno-informatyczna &mdash; I Liceum Ogólnokształcące w Gdańsku.</li>"
+      ],
+      "#zainteresowania_text": "Interests",
+      "#zainteresowania": [
+        "<li>Graph theory, random graphs, algorithms, information theory, task scheduling.</li>",
+        "<li>Intellectual history, economic theory, philosophy of social and natural sciences.</li>",
+        "<li>B-class movies and lousy books.</li>"
+      ],
+      "#liczba_erdosa-bacona": "Erd&#337;s-Bacon number: 7",
+      ".CS_ART": "Articles - computer science",
+      ".CS_CONF": "Conferences - computer science",
+      ".PPE_ART": "Articles - philosophy and economics",
+      ".PPE_CONF": "Conferences - philosophy and economics",
+      ".OTHER": "Other texts and recordings",
+      ".RESEARCH": "Research topics for prospective PhD, MSc, BSc",
+      ".MSC": "Past MSc theses",
+      ".BSC": "Past BSc theses"
+    },
+    "pl": {
+      "#o_mnie_text": "O mnie",
+      "#publikacje_text": "Publikacje",
+      "#studenci_text": "Studenci",
+      "#inne_text": "Inne",
+      "#kontakt_text": "Kontakt",
+      "#badania_text": "Badania",
+      "#badania": [
+        "<li>Algorytmy dokładne i przybliżone dla różnych modeli kolorowania grafów.</li>",
+        "<li>Właściwości strukturalne i kompresja dla różnych modeli grafów losowych.</li>",
+        "<li>Metodologia ekonomii i historia myśli ekonomicznej, austriacka szkoła ekonomii.</li>"
+      ],
+      "#praca_text": "Praca",
+      "#praca": [
+        "<li><b>(2019-)</b> &mdash; adiunkt &mdash; Wydział Matematyki i Informatyki, Uniwersytet Jagielloński.</li>",
+        "<li><b>(2016-18)</b> &mdash; inżynier oprogramowania &mdash; Google, Cloud Platform/Compute Engine.</li>",
+        "<li><b>(2010-16)</b> &mdash; asystent/wykładowca/adiunkt &mdash; Wydział Elektroniki, Telekomunikacji i Informatyki, Politechnika Gdańska.</li>"
+      ],
+      "#edukacja_text": "Edukacja",
+      "#edukacja": [
+        "<li><b>(2016-2021)</b> &mdash; studia doktoranckie &mdash; Filozofia, Wydział Nauk Społecznych UG.</li>",
+        "<li><b>(2015, 2018-2019)</b> &mdash; staż naukowy &mdash; The Center for Science of Information, Purdue University.</li>",
+        "<li><b>(2014-2016)</b> &mdash; studia magisterskie &mdash; Filozofia, Wydział Nauk Społecznych UG.<br><a href=\"./doc/mgr-filo.pdf\">Praca magisterska: Wartości i wolna wola w etyce Nicolaia Hartmanna</a>.</li>",
+        "<li><b>(2010-2015)</b> &mdash; studia doktoranckie &mdash; Informatyka, Wydział ETI PG.<br><a href=\"./doc/phd-inf.pdf\">Praca doktorska: Analiza właściwości algorytmicznych problemu szkieletowego kolorowania grafów</a>.</li>",
+        "<li><b>(2011-2014)</b> &mdash; studia licencjackie &mdash; Filozofia, Wydział Nauk Społecznych UG.<br><a href=\"./doc/lic-filo.pdf\">Praca licencjacka: Oczywistość i prawda w filozofii Franza Brentana</a>.</li>",
+        "<li><b>(2007-2011)</b> &mdash; studia magisterskie &mdash; Informatyka, Wydział ETI PG.<br><a href=\"./doc/mgr-inf.pdf\">Praca magisterska: Szkieletowe kolorowanie grafów</a>.</li>",
+        "<li><b>(2005-2010)</b> &mdash; studia magisterskie &mdash; Telekomunikacja, Wydział ETI PG.<br><a href=\"./doc/mgr-tele.pdf\">Praca magisterska: Projekt akustyczny wnętrza w oparciu o systemy modelowania akustycznego</a>.</li>",
+        "<li><b>(2002-2005)</b> &mdash; klasa matematyczno-fizyczno-informatyczna &mdash; I Liceum Ogólnokształcące w Gdańsku.</li>"
+      ],
+      "#zainteresowania_text": "Zainteresowania",
+      "#zainteresowania": [
+        "<li>Teoria grafów, grafy losowe, algorytmika, teoria informacji, szeregowanie zadań.</li>",
+        "<li>Historia idei, teoria ekonomii, metodologia nauk społecznych i przyrodniczych.</li>",
+        "<li>Słaby film i słaba książka.</li>"
+      ],
+      "#liczba_erdosa-bacona": "Liczba Erd&#337;sa-Bacona: 7",
+      ".CS_ART": "Artykuły - informatyka",
+      ".CS_CONF": "Referaty konferencyjne - informatyka",
+      ".PPE_ART": "Artykuły - filozofia i ekonomia",
+      ".PPE_CONF": "Referaty konferencyjne - filozofia i ekonomia",
+      ".OTHER": "Inne teksty i nagrania",
+      ".RESEARCH": "Tematy prac studenckich i problemów badawczych",
+      ".MSC": "Przeszłe prace magisterskie",
+      ".BSC": "Przeszłe prace licencjackie"
+    }
+  }
+}

@@ -1,10 +1,10 @@
-.MSC            { color: red; }
+.MSC            { color: dodgerblue; }
 .BSC            { color: limegreen; }
+.RESEARCH       { color: red; }
 .CS_ART         { color: crimson; }
 .CS_CONF        { color: deepskyblue; }
-.FIL_ECON_ART   { color: yellowgreen; }
-.FIL_ECON_CONF  { color: gold; }
-.OTHER          { color: turquoise; }
+.PPE_ART        { color: yellowgreen; }
+.PPE_CONF       { color: gold; }
 .OTHER_11       { color: dodgerblue; }
 .OTHER_10       { color: orchid; }
 .OTHER_9        { color: darkorchid; }
@@ -17,15 +17,13 @@
 .OTHER_2        { color: chartreuse; }
 .OTHER_1        { color: blanchedalmond; }
 
-.MSC            { margin-left: 10px; }
-.BSC            { margin-left: 10px; }
-
-ul              { margin-top: -0.5em; }
-ol              { margin-top: -0.3em; margin-left: -1em; }
+div > ul        { margin-top: -0.5em; text-align: justify; }
+div > ul::after { width: 100%; display: inline-block; content: "."; visibility: hidden}
+div > ol        { margin-top: 0em; margin-bottom: 0em; margin-left: -2.0em; }
 li              { line-height: 1.75em; }
+ol > ul > li    { margin-left: -2.5em; }
 hr              { width: 80%; }
 
-.group > ol > li         { margin-bottom: 20px; }
 .group > ol > li > div   { margin-left: 5%; }
 
 .publikacja  { font-weight: bold; }
@@ -36,13 +34,15 @@ hr              { width: 80%; }
 .inne_text   { display: table-cell; width: 50%; vertical-align: middle; font-family: MaszynaRoyalDarkFont; font-size: 140%; }
 .inne_img    { display: table-cell; width: 50%; vertical-align: middle; padding: 10px; }
 
-@media only screen and (min-width: 360px) and (max-width: 719px) {
+.odleglosc > p  { margin:2px 0 2px; text-indent: 5px; }
+
+@media only screen and (min-width: 360px) and (max-width: 819px) {
   #frame              { width: 92%; margin: 0 auto; }
   div#main ul#menu    { width: 90%; font-size: 18px; }
 }
 
-@media only screen and (min-width: 720px) {
-  #frame              { width: 700px; margin: 0 auto; }
+@media only screen and (min-width: 820px) {
+  #frame              { width: 800px; margin: 0 auto; }
 }
 
 @font-face {
@@ -57,7 +57,12 @@ hr              { width: 80%; }
 
 @font-face {
   font-family: "TheWall";
-  src: url('../fonts/"The_Wall.woff') format('woff'), url('../fonts/The_Wall.ttf') format('truetype'), url('../fonts/The_Wall.eot') format('embedded-opentype');
+  src: url('../fonts/The_Wall.ttf') format('truetype'), url('../fonts/The_Wall.eot') format('embedded-opentype');
 }
 
 .ui-widget * { outline: none; }
+
+.ui-tabs .ui-tabs-nav li {
+    padding: 0 5px;
+    text-align: center;
+}
