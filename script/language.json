@@ -24,18 +24,18 @@
       "#edukacja_text": "Education",
       "#edukacja": [
         "<li><b>(2016-2021)</b> &mdash; PhD studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.</li>",
-        "<li><b>(2015, 2018-2019)</b> &mdash; post-doc &mdash; The Center for Science of Information, Purdue University.</li>",
-        "<li><b>(2014-2016)</b> &mdash; MA studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.<br><a href=\"./doc/mgr-filo.pdf\">Praca magisterska: Values and free will in the ethics of Nicolai Hartmann</a> [in Polish].</li>",
+        "<li><b>(2015, 2018-2019)</b> &mdash; post-doc &mdash; Center for Science of Information, Purdue University.</li>",
+        "<li><b>(2014-2016)</b> &mdash; MA studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.<br><a href=\"./doc/mgr-filo.pdf\">Thesis: Values and free will in the ethics of Nicolai Hartmann</a> [in Polish].</li>",
         "<li><b>(2010-2015)</b> &mdash; PhD studies &mdash; Computer Science, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/phd-inf.pdf\">Thesis: Analysis of algorithmic properties of the backbone graph coloring problem</a> [in Polish].</li>",
         "<li><b>(2011-2014)</b> &mdash; BA studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.<br><a href=\"./doc/lic-filo.pdf\">Thesis: Evidence and truth in the philosophy of Franz Brentano</a> [in Polish].</li>",
         "<li><b>(2007-2011)</b> &mdash; MSc studies &mdash; Computer Science, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/mgr-inf.pdf\">Thesis: Backbone graph coloring</a> [in Polish].</li>",
         "<li><b>(2005-2010)</b> &mdash; MSc studies &mdash; Telecommunications, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/mgr-tele.pdf\">Thesis: Projekt akustyczny wnętrza w oparciu o systemy modelowania akustycznego</a> [in Polish].</li>",
-        "<li><b>(2002-2005)</b> &mdash; klasa matematyczno-fizyczno-informatyczna &mdash; I Liceum Ogólnokształcące w Gdańsku.</li>"
+        "<li><b>(2002-2005)</b> &mdash; profile in mathematics, physics, and computer science &mdash; Nicholas Copernicus High School No. 1, Gdańsk.</li>"
       ],
       "#zainteresowania_text": "Interests",
       "#zainteresowania": [
         "<li>Graph theory, random graphs, algorithms, information theory, task scheduling.</li>",
-        "<li>Intellectual history, economic theory, philosophy of social and natural sciences.</li>",
+        "<li>History of ideas, economic theory, philosophy of social and natural sciences.</li>",
         "<li>B-class movies and lousy books.</li>"
       ],
       "#liczba_erdosa-bacona": "Erd&#337;s-Bacon number: 7",
@@ -43,10 +43,27 @@
       ".CS_CONF": "Conferences - computer science",
       ".PPE_ART": "Articles - philosophy and economics",
       ".PPE_CONF": "Conferences - philosophy and economics",
-      ".OTHER": "Other texts and recordings",
+      ".OTHER": "Other texts and recordings [in Polish]",
       ".RESEARCH": "Research topics for prospective PhD, MSc, BSc",
       ".MSC": "Past MSc theses",
-      ".BSC": "Past BSc theses"
+      ".BSC": "Past BSc theses",
+      "#siwiec-msc": "Perfect graph recognition and coloring",
+      "#palenica-msc": "Random graph compression algorithms",
+      "#stobierski-msc": "Fast computation of maximum flows using combinatorial methods",
+      "#serwin-msc": "Fitting random network models and parameters for real-world PPI networks",
+      "#grabis-msc": "Implementation of selected macroeconomic DSGE models",
+      "#gorski-bsc": "The generalization of Turán number",
+      "#serwin-bsc": "Overview of cograph related algorithms",
+      "#michalik-bsc": "On λ-backbone coloring of cliques with tree backbones in linear time",
+      "#twarog-bsc": "Polynomial time approximation schemes for NP-hard problems on planar graphs",
+      "#pach-bsc": "Distributed consensus protocols",
+      "#sokolowska-bsc": "Task scheduling for block-type conflict graphs",
+      "#zieba-bsc": "The game chromatic number of complete multipartite graphs with no singletons",
+      "#lesniak-bsc": "Asymptotic and practical efficiency of various string matching algorithms",
+      "#glapa-bsc": "Implementation of exact enumeration algorithms for vertex coloring",
+      "#kubaty-bsc": "Implementation of exact algorithms for minimum dominating set",
+      "#research-koala-networkit": "Implementation of graph algorithms",
+      "#research-string-algorithms": "Implementation of algorithms for text searching and compression"
     },
     "pl": {
       "#o_mnie_text": "O mnie",
@@ -75,7 +92,7 @@
         "<li><b>(2011-2014)</b> &mdash; studia licencjackie &mdash; Filozofia, Wydział Nauk Społecznych UG.<br><a href=\"./doc/lic-filo.pdf\">Praca licencjacka: Oczywistość i prawda w filozofii Franza Brentana</a>.</li>",
         "<li><b>(2007-2011)</b> &mdash; studia magisterskie &mdash; Informatyka, Wydział ETI PG.<br><a href=\"./doc/mgr-inf.pdf\">Praca magisterska: Szkieletowe kolorowanie grafów</a>.</li>",
         "<li><b>(2005-2010)</b> &mdash; studia magisterskie &mdash; Telekomunikacja, Wydział ETI PG.<br><a href=\"./doc/mgr-tele.pdf\">Praca magisterska: Projekt akustyczny wnętrza w oparciu o systemy modelowania akustycznego</a>.</li>",
-        "<li><b>(2002-2005)</b> &mdash; klasa matematyczno-fizyczno-informatyczna &mdash; I Liceum Ogólnokształcące w Gdańsku.</li>"
+        "<li><b>(2002-2005)</b> &mdash; klasa matematyczno-fizyczno-informatyczna &mdash; I Liceum Ogólnokształcące im. Mikołaja Kopernika w Gdańsku.</li>"
       ],
       "#zainteresowania_text": "Zainteresowania",
       "#zainteresowania": [
@@ -91,7 +108,24 @@
       ".OTHER": "Inne teksty i nagrania",
       ".RESEARCH": "Tematy prac studenckich i problemów badawczych",
       ".MSC": "Przeszłe prace magisterskie",
-      ".BSC": "Przeszłe prace licencjackie"
+      ".BSC": "Przeszłe prace licencjackie",
+      "#siwiec-msc": "Rozpoznawanie i kolorowanie grafów doskonałych",
+      "#palenica-msc": "Algorytmy kompresji grafów losowych",
+      "#stobierski-msc": "Szybkie obliczanie maksymalnych przepływów metodami kombinatorycznymi",
+      "#serwin-msc": "Dopasowanie modeli generowania losowych sieci oraz ich parametrów do rzeczywistych sieci PPI",
+      "#grabis-msc": "Implementacja wybranych modeli makroekonomicznych DSGE",
+      "#gorski-bsc": "Uogólnienie liczby Turána",
+      "#serwin-bsc": "Przegląd algorytmów operujących na kografach",
+      "#michalik-bsc": "O λ-szkieletowym kolorowaniu klik z drzewem w szkielecie w czasie liniowym",
+      "#twarog-bsc": "Wielomianowe schematy aproksymacyjne dla problemów NP-trudnych na grafach planarnych",
+      "#pach-bsc": "Protokoły rozproszonego konsensusu",
+      "#sokolowska-bsc": "Szeregowanie zadań z blokowym grafem ograniczeń",
+      "#zieba-bsc": "Rozgrywana liczba chromatyczna dla grafów pełnych k-dzielnych bez wierzchołków izolowanych",
+      "#lesniak-bsc": "Asymptotyczna i praktyczna efektywność różnych algorytmów dopasowania ciągów",
+      "#glapa-bsc": "Implementacja dokładnych algorytmów kolorowania wierzchołkowego grafów",
+      "#kubaty-bsc": "Implementacja dokładnych algorytmów obliczania najmniejszego zbioru dominującego",
+      "#research-koala-networkit": "Implementacja algorytmów grafowych",
+      "#research-string-algorithms": "Implementacja algorytmów wyszukiwania, dekompozycji i kompresji tekstu"
     }
   }
 }
