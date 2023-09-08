@@ -1,21 +1,19 @@
-.MSC            { color: dodgerblue; }
-.BSC            { color: limegreen; }
-.RESEARCH       { color: red; }
-.CS_ART         { color: crimson; }
-.CS_CONF        { color: deepskyblue; }
-.PPE_ART        { color: yellowgreen; }
-.PPE_CONF       { color: gold; }
-.OTHER_11       { color: dodgerblue; }
-.OTHER_10       { color: orchid; }
-.OTHER_9        { color: darkorchid; }
-.OTHER_8        { color: peru; }
-.OTHER_7        { color: darkkhaki; }
-.OTHER_6        { color: orangered; }
-.OTHER_5        { color: brown; }
-.OTHER_4        { color: blueviolet; }
-.OTHER_3        { color: orange; }
-.OTHER_2        { color: chartreuse; }
-.OTHER_1        { color: blanchedalmond; }
+.ui-state-default .MSC            { color: #ff4040; }
+.ui-state-active  .MSC            { color: #ff0000; }
+.ui-state-default .BSC            { color: #40a0ff; }
+.ui-state-active  .BSC            { color: #0000ff; }
+.ui-state-default .RESEARCH       { color: #40ff40; }
+.ui-state-active  .RESEARCH       { color: #408040; }
+.ui-state-default .CS_ART         { color: #ff4040; }
+.ui-state-active  .CS_ART         { color: #ff0000; }
+.ui-state-default .CS_CONF        { color: #40a0ff; }
+.ui-state-active  .CS_CONF        { color: #0000ff; }
+.ui-state-default .PPE_ART        { color: #ffa000; }
+.ui-state-active  .PPE_ART        { color: #804000; }
+.ui-state-default .PPE_CONF       { color: #00ffff; }
+.ui-state-active  .PPE_CONF       { color: #008080; }
+.ui-state-default .OTHER_1        { color: #ff00ff; }
+.ui-state-active  .OTHER_1        { color: #800080; }
 
 div > ul        { margin-top: -0.5em; margin-bottom: -0.5em; text-align: justify; }
 div > ol        { margin-top: 0em; margin-bottom: 0em; margin-left: -2.0em; }
@@ -29,7 +27,7 @@ hr              { width: 80%; }
 .czasopismo  { font-variant: small-caps; font-size: 105%; }
 .ksiazka     { font-variant: small-caps; font-size: 105%; }
 
-.inne_group  { display: table-row; border: 2px solid; } 
+.inne_group  { display: table-row; border: 2px solid; }
 .inne_text   { display: table-cell; width: 50%; vertical-align: middle; font-family: MaszynaRoyalDarkFont; font-size: 140%; }
 .inne_img    { display: table-cell; width: 50%; vertical-align: middle; padding: 10px; }
 
@@ -63,7 +61,5 @@ hr              { width: 80%; }
 
 .ui-widget * { outline: none; }
 
-.ui-tabs .ui-tabs-nav li {
-    padding: 0 5px;
-    text-align: center;
-}
+.ui-tabs { padding: 0; }
+.ui-tabs > .ui-tabs-nav > li { padding: 0 5px; }

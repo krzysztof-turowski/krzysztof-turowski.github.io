@@ -19,17 +19,17 @@
       "#praca": [
         "<li><b>(2019-)</b> &mdash; assistant professor &mdash; Theoretical Computer Science Department, Faculty of Mathematics and Computer Science, Jagiellonian University, Kraków, Poland.</li>",
         "<li><b>(2016-18)</b> &mdash; software engineer &mdash; Google, Cloud Platform/Compute Engine.</li>",
-        "<li><b>(2010-16)</b> &mdash; assistant/lecturer/assistant professor &mdash; Wydział Elektroniki, Telekomunikacji i Informatyki, Politechnika Gdańska.</li>"
+        "<li><b>(2010-16)</b> &mdash; assistant/lecturer/assistant professor &mdash; Department of Algorithms and Systems Modelling, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology, Poland.</li>"
       ],
       "#edukacja_text": "Education",
       "#edukacja": [
-        "<li><b>(2016-2021)</b> &mdash; PhD studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.</li>",
+        "<li><b>(2016-2021)</b> &mdash; PhD studies &mdash; Philosophy, Faculty of Social Sciences, University of Gdańsk.</li>",
         "<li><b>(2015, 2018-2019)</b> &mdash; post-doc &mdash; Center for Science of Information, Purdue University.</li>",
-        "<li><b>(2014-2016)</b> &mdash; MA studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.<br><a href=\"./doc/mgr-filo.pdf\">Thesis: Values and free will in the ethics of Nicolai Hartmann</a> [in Polish].</li>",
+        "<li><b>(2014-2016)</b> &mdash; MA studies &mdash; Philosophy, Faculty of Social Sciences, University of Gdańsk.<br><a href=\"./doc/mgr-filo.pdf\">Thesis: Values and free will in the ethics of Nicolai Hartmann</a> [in Polish].</li>",
         "<li><b>(2010-2015)</b> &mdash; PhD studies &mdash; Computer Science, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/phd-inf.pdf\">Thesis: Analysis of algorithmic properties of the backbone graph coloring problem</a> [in Polish].</li>",
-        "<li><b>(2011-2014)</b> &mdash; BA studies &mdash; Philosophy, Faculty of Social Sciences, Gdańsk University.<br><a href=\"./doc/lic-filo.pdf\">Thesis: Evidence and truth in the philosophy of Franz Brentano</a> [in Polish].</li>",
+        "<li><b>(2011-2014)</b> &mdash; BA studies &mdash; Philosophy, Faculty of Social Sciences, University of Gdańsk.<br><a href=\"./doc/lic-filo.pdf\">Thesis: Evidence and truth in the philosophy of Franz Brentano</a> [in Polish].</li>",
         "<li><b>(2007-2011)</b> &mdash; MSc studies &mdash; Computer Science, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/mgr-inf.pdf\">Thesis: Backbone graph coloring</a> [in Polish].</li>",
-        "<li><b>(2005-2010)</b> &mdash; MSc studies &mdash; Telecommunications, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/mgr-tele.pdf\">Thesis: Projekt akustyczny wnętrza w oparciu o systemy modelowania akustycznego</a> [in Polish].</li>",
+        "<li><b>(2005-2010)</b> &mdash; MSc studies &mdash; Telecommunications, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology.<br><a href=\"./doc/mgr-tele.pdf\">Thesis: Acoustic interior design using acoustic modeling systems</a> [in Polish].</li>",
         "<li><b>(2002-2005)</b> &mdash; profile in mathematics, physics, and computer science &mdash; Nicholas Copernicus High School No. 1, Gdańsk.</li>"
       ],
       "#zainteresowania_text": "Interests",
@@ -62,6 +62,7 @@
       "#lesniak-bsc": "Asymptotic and practical efficiency of various string matching algorithms",
       "#glapa-bsc": "Implementation of exact enumeration algorithms for vertex coloring",
       "#kubaty-bsc": "Implementation of exact algorithms for minimum dominating set",
+      "#salawa-bsc": "Implementation of exact algorithms for maximum independent set",
       "#research-koala-networkit": "Implementation of graph algorithms",
       "#research-string-algorithms": "Implementation of algorithms for text searching and compression"
     },
@@ -124,6 +125,7 @@
       "#lesniak-bsc": "Asymptotyczna i praktyczna efektywność różnych algorytmów dopasowania ciągów",
       "#glapa-bsc": "Implementacja dokładnych algorytmów kolorowania wierzchołkowego grafów",
       "#kubaty-bsc": "Implementacja dokładnych algorytmów obliczania najmniejszego zbioru dominującego",
+      "#salawa-bsc": "Implementacja dokładnych algorytmów obliczania największego zbioru niezależnego",
       "#research-koala-networkit": "Implementacja algorytmów grafowych",
       "#research-string-algorithms": "Implementacja algorytmów wyszukiwania, dekompozycji i kompresji tekstu"
     }
