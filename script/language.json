@@ -64,7 +64,8 @@
       "#kubaty-bsc": "Implementation of exact algorithms for minimum dominating set",
       "#salawa-bsc": "Implementation of exact algorithms for maximum independent set",
       "#research-koala-networkit": "Implementation of graph algorithms",
-      "#research-string-algorithms": "Implementation of algorithms for text searching and compression"
+      "#research-string-algorithms": "Implementation of algorithms for text searching and compression",
+      "#research-distributed-framework": "Implementation of distributed algorithms"
     },
     "pl": {
       "#o_mnie_text": "O mnie",
@@ -127,7 +128,8 @@
       "#kubaty-bsc": "Implementacja dokładnych algorytmów obliczania najmniejszego zbioru dominującego",
       "#salawa-bsc": "Implementacja dokładnych algorytmów obliczania największego zbioru niezależnego",
       "#research-koala-networkit": "Implementacja algorytmów grafowych",
-      "#research-string-algorithms": "Implementacja algorytmów wyszukiwania, dekompozycji i kompresji tekstu"
+      "#research-string-algorithms": "Implementacja algorytmów wyszukiwania, dekompozycji i kompresji tekstu",
+      "#research-distributed-framework": "Implementacja algorytmów rozproszonych"
     }
   }
 }
