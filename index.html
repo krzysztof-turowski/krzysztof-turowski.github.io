@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
     <head>
     <title>Krzysztof Turowski</title>
-    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="script/jquery.MultiLanguage.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/black-tie/jquery-ui.css" type="text/css">
 
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/black-tie/jquery-ui.css" type="text/css">
     <link rel="stylesheet" href="css/mystyle.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
@@ -19,38 +20,39 @@
       lang = lang == 'pl' ? 'en' : 'pl';
       $.MultiLanguage('script/language.json', lang);
     }
+    
+    function setupAccordion(selector) {
+        return $(selector).accordion({
+            header: "> div > h3",
+            collapsible: true,
+            active: false,
+            heightStyle: "content",
+        }).disableSelection();
+    }
+
+    function shuffle(items) {
+        for (let i = items.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [items[i], items[j]] = [items[j], items[i]];
+        }
+        for (let i = 0; i < items.length; items[i].appendChild(items[i].children[0]), i += 2);
+        return items;
+    }
 
     $(function() {
       $("#main").tabs({disabled: []});
 
-      $(".publikacje").accordion({
-        header: "> div > h3",
-        collapsible: true,
-        active: false,
-        heightStyle: "content",
-      }).sortable({
+      setupAccordion(".publikacje").sortable({
         handle: "h3",
         placeholder: "ui-state-highlight",
         stop: function(event, ui) {
           ui.item.children("h3").triggerHandler("focusout");
         }
-      }).disableSelection();
+      });
 
-      $(".studenci").accordion({
-        header: "> div > h3",
-        collapsible: true,
-        active: false,
-        heightStyle: "content",
-      }).disableSelection();
+      setupAccordion(".studenci");
 
-      function shuffle(o){
-        for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-        for(var i = 0; i < o.length; o[i].appendChild(o[i].children[0]), i += 2);
-        return o;
-      };
-      $(".inne").html(shuffle($(".inne").children().get()));
-
-      $(".inne").sortable({
+      $(".inne").html(shuffle($(".inne").children().get())).sortable({
         handle: "div",
         placeholder: "ui-state-highlight",
         stop: function(event, ui) {
@@ -200,7 +202,7 @@
                   <span class="czasopismo">Journal of Graph Theory</span>, 107(1) (2024), 5-28.
                 </li>
                 <li>Robert Janczewski, Krzysztof Turowski, Bartłomiej Wróblewski<br>
-                  <span class="publikacja">Edge coloring of products of signed graphs</span><br>
+                  <span class="publikacja"><a href="https://www.dmgt.uz.zgora.pl/publish/article.php?doi=2553">Edge coloring of products of signed graphs</a></span><br>
                   <span class="czasopismo">Discussiones Mathematicae Graph Theory</span>, (przyjęte do druku).
                 </li>
               </ol>
@@ -225,7 +227,7 @@
                 </li>
                 <li>Krzysztof Turowski<br>
                   <span class="publikacja">Greedy algorithms for backbone graph coloring in KOALA library</span><br>
-                  <span class="czasopismo">ICT Young 2012: II konferencja Studentów i Doktorantów Elektroniki, Telekomunikacji, Informatyki, Automatyki i Robotyki</span>, Gdańsk, Polska, 26-27.05.2012.
+                  <span class="czasopismo">ICT Young 2012: II Konferencja Studentów i Doktorantów Elektroniki, Telekomunikacji, Informatyki, Automatyki i Robotyki</span>, Gdańsk, Polska, 26-27.05.2012.
                 </li>
                 <li>Marcin Jurkiewicz, Krzysztof Turowski<br>
                   <span class="publikacja">Invariants of some non-weakly perfect graphs</span><br>
@@ -324,7 +326,7 @@
                   <span class="czasopismo">Zagadnienia Filozoficzne w Nauce</span> (przyjęte do druku).
                 </li>
                 <li>Norbert Slenzok, Krzysztof Turowski<br>
-                  <span class="publikacja">Non-Aristotelian Elements in Carl Menger's Methodology of the Social Sciences</span><br>
+                  <span class="publikacja"><a href="https://read.dukeupress.edu/hope/article/doi/10.1215/00182702-11540278/391032/Non-Aristotelian-Elements-in-Carl-Menger-s">Non-Aristotelian Elements in Carl Menger's Methodology</a></span><br>
                   <span class="czasopismo">History of Political Economy</span> (przyjęte do druku).
                 </li>
               </ol>
@@ -432,6 +434,8 @@
                 <li>Michał Stobierski - <a href="https://github.com/stobis/better-max-flow" id="stobierski-msc"></a> (2022)</li>
                 <li>Marcin Serwin - <a href="https://github.com/krzysztof-turowski/duplication-divergence" id="serwin-msc"></a> (2022)</li>
                 <li>Wojciech Grabis - <a href="https://github.com/wgrabis/DSGE" id="grabis-msc"></a> (2023)</li>
+                <li>Krzysztof Michalik - <a href="https://arxiv.org/abs/2409.10201" id="michalik-msc"></a> (2024)</li>
+                <li>Rafał Kilar - <a href="https://github.com/krzysztof-turowski/koala-networkit/tree/master/text/maximum_weight_matching" id="kilar-msc"></a> (2024)</li>
               </ol>
             </div>
           </div>

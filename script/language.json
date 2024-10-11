@@ -17,6 +17,7 @@
       ],
       "#praca_text": "Work",
       "#praca": [
+        "<li><b>(2024-)</b> &mdash; assistant vice-president &mdash; HSBC, Financial Engineering.</li>",
         "<li><b>(2019-)</b> &mdash; assistant professor &mdash; Theoretical Computer Science Department, Faculty of Mathematics and Computer Science, Jagiellonian University, Kraków, Poland.</li>",
         "<li><b>(2016-18)</b> &mdash; software engineer &mdash; Google, Cloud Platform/Compute Engine.</li>",
         "<li><b>(2010-16)</b> &mdash; assistant/lecturer/assistant professor &mdash; Department of Algorithms and Systems Modelling, Faculty of Electronics, Telecommunications and Informatics, Gdańsk University of Technology, Poland.</li>"
@@ -52,6 +53,8 @@
       "#stobierski-msc": "Fast computation of maximum flows using combinatorial methods",
       "#serwin-msc": "Fitting random network models and parameters for real-world PPI networks",
       "#grabis-msc": "Implementation of selected macroeconomic DSGE models",
+      "#michalik-msc": "Backbone coloring for graphs with degree 4",
+      "#kilar-msc": "Comparison of maximum weight matching algorithms on general graphs",
       "#gorski-bsc": "The generalization of Turán number",
       "#serwin-bsc": "Overview of cograph related algorithms",
       "#michalik-bsc": "On λ-backbone coloring of cliques with tree backbones in linear time",
@@ -86,6 +89,7 @@
       ],
       "#praca_text": "Praca",
       "#praca": [
+        "<li><b>(2024-)</b> &mdash; AVP &mdash; HSBC, Financial Engineering.</li>",
         "<li><b>(2019-)</b> &mdash; adiunkt &mdash; Wydział Matematyki i Informatyki, Uniwersytet Jagielloński.</li>",
         "<li><b>(2016-18)</b> &mdash; inżynier oprogramowania &mdash; Google, Cloud Platform/Compute Engine.</li>",
         "<li><b>(2010-16)</b> &mdash; asystent/wykładowca/adiunkt &mdash; Wydział Elektroniki, Telekomunikacji i Informatyki, Politechnika Gdańska.</li>"
@@ -121,6 +125,8 @@
       "#stobierski-msc": "Szybkie obliczanie maksymalnych przepływów metodami kombinatorycznymi",
       "#serwin-msc": "Dopasowanie modeli generowania losowych sieci oraz ich parametrów do rzeczywistych sieci PPI",
       "#grabis-msc": "Implementacja wybranych modeli makroekonomicznych DSGE",
+      "#michalik-msc": "Kolorowanie szkieletowe grafów o stopniu 4",
+      "#kilar-msc": "Porównanie algorytmów znajdowania maksymalnych skojarzeń na dowolnych grafach",
       "#gorski-bsc": "Uogólnienie liczby Turána",
       "#serwin-bsc": "Przegląd algorytmów operujących na kografach",
       "#michalik-bsc": "O λ-szkieletowym kolorowaniu klik z drzewem w szkielecie w czasie liniowym",
