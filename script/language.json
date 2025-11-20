@@ -75,6 +75,8 @@
       "#procyk-bsc": "Implementation and comparison of maximum flow algorithms",
       "#szwaja-bsc": "Implementation and comparison of planar shortest paths algorithms",
       "#kukowski-bsc": "Implementation and comparison of priority queue structures",
+      "#bernacki-bsc": "Implementation and comparison of minimum spanning tree algorithms",
+      "#wykpis-bsc": "Algebraic algorithms in graph problems",
       "#research-koala-networkit": "Implementation of graph algorithms",
       "#research-string-algorithms": "Implementation of algorithms for text searching and compression",
       "#research-distributed-framework": "Implementation of distributed algorithms"
@@ -150,6 +152,8 @@
       "#procyk-bsc": "Implementacja i porównanie algorytmów znajdowania maksymalnego przepływu",
       "#szwaja-bsc": "Implementacja i porównanie algorytmów przepływów w grafach planarnych",
       "#kukowski-bsc": "Implementacja i porównanie struktur kolejek priorytetowych",
+      "#bernacki-bsc": "Implementacja i porównanie algorytmów znajdowania minimalnego drzewa spinającego",
+      "#wykpis-bsc": "Algorytmy algebraiczne dla problemów grafowych",
       "#research-koala-networkit": "Implementacja algorytmów grafowych",
       "#research-string-algorithms": "Implementacja algorytmów wyszukiwania, dekompozycji i kompresji tekstu",
       "#research-distributed-framework": "Implementacja algorytmów rozproszonych"
