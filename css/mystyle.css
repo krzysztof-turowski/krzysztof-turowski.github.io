@@ -27,18 +27,29 @@ hr              { width: 80%; }
 .czasopismo  { font-variant: small-caps; font-size: 105%; }
 .ksiazka     { font-variant: small-caps; font-size: 105%; }
 
+.inne        { display: table; font-size: 125%; text-align: center; width: 95%; margin-top: 10px; }
 .inne_group  { display: table-row; border: 2px solid; }
 .inne_text   { display: table-cell; width: 50%; vertical-align: middle; font-family: MaszynaRoyalDarkFont; font-size: 140%; }
 .inne_img    { display: table-cell; width: 50%; vertical-align: middle; padding: 10px; }
 
 .odleglosc > p  { margin:2px 0 2px; text-indent: 5px; }
 
-@media only screen and (min-width: 360px) and (max-width: 719px) {
+div#main ul#menu  { display: flex; flex-wrap: wrap; }
+div#main ul#menu > li > a { display: block; white-space: normal; }
+
+#id       { top: -10px; }
+
+.ui-widget * { outline: none; }
+
+.ui-tabs { padding: 0; }
+.ui-tabs > .ui-tabs-nav > li { padding: 0 5px; }
+
+@media only screen and (max-width: 719px) {
   #frame              { width: 92%; margin: 0 auto; }
-  div#main ul#menu    { width: 90%; font-size: 12px; }
-  .inne_text          { font-size: 14px; }
-  .inne_img           { padding: 5px; }
-  .inne_img > img     { transform: scale(0.7); transform-origin: center; }
+  div#main ul#menu    { font-size: 12px; }
+  li                  { line-height: 1.5em; }
+  .ui-tabs > .ui-tabs-nav > li { padding: 0 1px; }
+  #menu li:has(a[href="#inne"])   { display: none; }
 }
 
 @media only screen and (min-width: 720px) {
@@ -59,10 +70,3 @@ hr              { width: 80%; }
   font-family: "TheWall";
   src: url('../fonts/The_Wall.ttf') format('truetype'), url('../fonts/The_Wall.eot') format('embedded-opentype');
 }
-
-#id       { top: -10px; }
-
-.ui-widget * { outline: none; }
-
-.ui-tabs { padding: 0; }
-.ui-tabs > .ui-tabs-nav > li { padding: 0 5px; }
