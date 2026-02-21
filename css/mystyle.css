@@ -35,7 +35,10 @@ hr              { width: 80%; }
 
 @media only screen and (min-width: 360px) and (max-width: 719px) {
   #frame              { width: 92%; margin: 0 auto; }
-  div#main ul#menu    { width: 90%; font-size: 18px; }
+  div#main ul#menu    { width: 90%; font-size: 12px; }
+  .inne_text          { font-size: 14px; }
+  .inne_img           { padding: 5px; }
+  .inne_img > img     { transform: scale(0.7); transform-origin: center; }
 }
 
 @media only screen and (min-width: 720px) {
