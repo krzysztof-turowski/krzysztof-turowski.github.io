@@ -12,6 +12,8 @@
 .ui-state-active  .PPE_ART        { color: #804000; }
 .ui-state-default .PPE_CONF       { color: #00ffff; }
 .ui-state-active  .PPE_CONF       { color: #008080; }
+.ui-state-default .ALL_BOOKS      { color: #40ff40; }
+.ui-state-active  .ALL_BOOKS      { color: #408040; }
 .ui-state-default .OTHER_1        { color: #ff00ff; }
 .ui-state-active  .OTHER_1        { color: #800080; }
 
@@ -26,11 +28,17 @@ hr              { width: 80%; }
 .publikacja  { font-weight: bold; }
 .czasopismo  { font-variant: small-caps; font-size: 105%; }
 .ksiazka     { font-variant: small-caps; font-size: 105%; }
+.ksiazki     { border-collapse: collapse; border: none; width: 100%; }
+.ksiazki, .ksiazki tr, .ksiazki td { border: none; vertical-align: middle; }
+.ksiazki .ksiazka-okladka { width: 80px; padding: 0.5em 1em 0.5em 0; }
+.ksiazki .okladka { display: block; width: 70px; height: auto; }
+.ksiazki .ksiazka-info { padding: 0.5em 0; line-height: 18pt; }
 
 .inne        { display: table; font-size: 125%; text-align: center; width: 95%; margin-top: 10px; }
-.inne_group  { display: table-row; border: 2px solid; }
+.inne_group  { display: table-row; height: 120px; border: 2px solid; }
 .inne_text   { display: table-cell; width: 50%; vertical-align: middle; font-family: MaszynaRoyalDarkFont; font-size: 140%; }
-.inne_img    { display: table-cell; width: 50%; vertical-align: middle; padding: 10px; }
+.inne_img    { display: table-cell; width: 50%; height: 100px; vertical-align: middle; padding: 10px; }
+.inne_img img { display: block; width: 100%; max-width: 100%; height: 100px; margin: 0 auto; object-fit: contain; }
 
 .odleglosc > p  { margin:2px 0 2px; text-indent: 5px; }
 
@@ -50,6 +58,7 @@ div#main ul#menu > li > a { display: block; white-space: normal; }
   li                  { line-height: 1.5em; }
   .ui-tabs > .ui-tabs-nav > li { padding: 0 1px; }
   #menu li:has(a[href="#inne"])   { display: none; }
+  .ksiazki .okladka   { width: 55px; }
 }
 
 @media only screen and (min-width: 720px) {
