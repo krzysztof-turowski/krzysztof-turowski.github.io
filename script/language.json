@@ -84,6 +84,8 @@
       "#burszka-bsc": "Implementation and comparison of shortest common superstring algorithms",
       "#wolny-bsc": "Implementation and comparison of all pairs shortest paths algorithms",
       "#janor-bsc": "Implementation of separator-based algorithms for planar graphs",
+      "#skvarniuk-bsc": "Implementation and comparison of Lempel-Ziv factorization algorithms",
+      "#szlachetka-bsc": "Implementation and comparison of matching wildcards algorithms",
       "#research-koala-networkit": "Implementation of graph algorithms",
       "#research-string-algorithms": "Implementation of algorithms for text searching and compression",
       "#research-distributed-framework": "Implementation of distributed algorithms"
@@ -168,6 +170,8 @@
       "#burszka-bsc": "Implementacja i porównanie algorytmów wyznaczania najkrótszego nadsłowa",
       "#wolny-bsc": "Implementacja i porównanie algorytmów wyznaczania wszystkich par ścieżek w grafach",
       "#janor-bsc": "Implementacja algorytmów opartych na separatorach dla grafów planarnych",
+      "#skvarniuk-bsc": "Implementacja i porównanie algorytmów faktoryzacji Lempela-Ziva",
+      "#szlachetka-bsc": "Implementacja i porównanie algorytmów dopasowania ciągów z wieloznacznikami",
       "#research-koala-networkit": "Implementacja algorytmów grafowych",
       "#research-string-algorithms": "Implementacja algorytmów wyszukiwania, dekompozycji i kompresji tekstu",
       "#research-distributed-framework": "Implementacja algorytmów rozproszonych"
